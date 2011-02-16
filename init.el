@@ -1,43 +1,47 @@
 ;-----------------------------------------------
 ;       .emacs
-;  Author: Arturo Fdez. M (arturo@sanrin.info)
-;  Date:   2007-03-24
-;  Update: 2009-12-11
+;  Author: Arturo Fdez. M (arturo@bsnux.com)
 ;  License: GPL v2.0
 ;-----------------------------------------------
-;  Simple command reference:
-;
-;  M-w: Copy
-;  C-y: Paste
-;  C-x C-f: Open a file
-;  C-x C-s: Save buffer to file
-;  C-x C-c: Exit
-;  C-x k: Kill the buffer
-;  C-x C-w: Save buffer as
-;  C-x i: Insert another file in this buffer
-;  C-space: Mark a region
-;  C-x o: Switch between windows
-;  C-x 2: Open a new window
-;  C-x b: Switch between buffers
-;  C-s: Search forward (incremental)
-;  C-k: Kill to end of file
-;  C-x h: Select all
-;  M-<: Go to beginning of file
-;  M->: Go to end of file
-;  M-x describe-variable
-;  M-x replace-string
-;  M-x compile
-;  M-x tmm-menubar: Shows menu options
-;  M-x comment-region: Set comments on marked region
-;  C-c C-c: Execute script (Python mode and other)
-;  C-x C-f RET /arturo@bnsux.com:/home/arturo/.emacs: Open remote file usign
-;          TRAMP
-;  
-;  C-p:     Up
-;  C-n:     Down
-;  C-f:     Right
-;  C-b:     Left
-;-----------------------------------------------
+
+(setq load-path (cons "~/.emacs.d/" load-path))
+(setq load-path (cons "~/.emacs.d/configs/" load-path))
+(setq load-path (cons "~/.emacs.d/vendor/" load-path))
+
+(defconst emacs-config-dir "~/.emacs.d/configs/")
+(defconst emacs-vendor-dir "~/.emacs.d/vendor/")
+
+(defun get-subdirs (directory)
+  "Get a list of subdirectories under a given directory"
+  (apply 'nconc (mapcar (lambda (fa)
+                        (and
+                         (eq (cadr fa) t)
+                         (not (equal (car fa) "."))
+                         (not (equal (car fa) ".."))
+                         (list (car fa))))
+                        (directory-files-and-attributes directory))))
+
+(defun add-dirs-to-loadpath (dir-name)
+  "add subdirs of your vendor directory to the load path"
+  (dolist (subdir (get-subdirs dir-name))
+    (setq load-path (cons (concat dir-name subdir) load-path))
+    (message "Added %s to load path" subdir)))
+
+(add-dirs-to-loadpath emacs-vendor-dir)
+
+(defun load-cfg-files (filelist)
+  (dolist (file filelist)
+    (let ((filename (expand-file-name (concat emacs-config-dir file ".el"))))
+      (if (file-exists-p filename)
+          (progn
+            (load (concat filename))
+            (message "Loaded config file: %s" filename))
+      	(message "Could not load file: %s" filename)))))
+
+(load-cfg-files '("javascript"
+									"autocomplete"
+									"yasnippet"
+                   "color-theme"))
 
 ; Custom variables
 (custom-set-variables
@@ -76,8 +80,6 @@
 ; Delete unnecesary auto-save files
 (setq delete-auto-save-files t)	
 
-; JavaScript files are associated to C mode
-(setq auto-mode-alist (append '(("\\.js$" . c-mode)) auto-mode-alist))
 
 ;;; Electric Pairs
 (add-hook 'python-mode-hook
@@ -108,45 +110,19 @@
 ;; Changes all yes/no questions to y/n type
 (fset 'yes-or-no-p 'y-or-n-p)
 
-(add-to-list 'load-path "~/.emacs.d/themes")
-(require 'color-theme-wombat)
-(color-theme-wombat)
 (custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
  )
-
-(add-to-list 'load-path "~/.emacs.d/plugins")
-(progn (cd "~/.emacs.d/plugins") (normal-top-level-add-subdirs-to-load-path))
 
 ;; Fonts
 (set-face-attribute 'default nil :font "Consolas 11")
 
-;; Ropemacs, yasnippets and auto-complete configuration
-(add-to-list 'load-path "~/.emacs.d/")
-(require 'smart-operator)
-(require 'auto-complete)
-(global-auto-complete-mode t)
-(add-to-list 'load-path "~/.emacs.d/plugins/yasnippet")
-(require 'yasnippet) 
-(yas/initialize)
-(yas/load-directory "~/.emacs.d/plugins/yasnippet/snippets")
-(load-library "auto-complete-yasnippet")
-;;(load-library "init-python")
 
-(add-to-list 'load-path "~/.emacs.d/django-mode")
-(require 'django-html-mode)
- (require 'django-mode)
- (yas/load-directory "~/.emacs.d/django-mode/snippets")
- (add-to-list 'auto-mode-alist '("\\.djhtml$" . django-html-mode))
-
-(setq whitespace-style '(lines))
-(setq whitespace-line-column 80)
-(global-whitespace-mode 1)
-
-;; Linum 
-(add-hook 'find-file-hook (lambda () (linum-mode 1)))
-(global-linum-mode 1)
-(setq linum-format "%d ")
+;;; This was installed by package-install.el.
+;;; This provides support for the package system and
+;;; interfacing with ELPA, the package archive.
+;;; Move this code earlier if you want to reference
+;;; packages in your .emacs.
+(when
+    (load
+     (expand-file-name "~/.emacs.d/elpa/package.el"))
+  (package-initialize))
