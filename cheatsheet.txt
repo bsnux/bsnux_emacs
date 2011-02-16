@@ -1,0 +1,36 @@
+;-----------------------------------------------
+;  Emacs. Simple command reference:
+;
+;  M-w: Copy
+;  C-y: Paste
+;  C-x C-f: Open a file
+;  C-x C-s: Save buffer to file
+;  C-x C-c: Exit
+;  C-x k: Kill the buffer
+;  C-x C-w: Save buffer as
+;  C-x i: Insert another file in this buffer
+;  C-space: Mark a region
+;  C-x o: Switch between windows
+;  C-x 2: Open a new window (vertically)
+;  C-x 3: Open a new window (side by side)
+;  C-x b: Switch between buffers
+;  C-s: Search forward (incremental)
+;  C-k: Kill to end of file
+;  C-x h: Select all
+;  M-<: Go to beginning of file
+;  M->: Go to end of file
+;  M-x describe-variable
+;  M-x replace-string
+;  M-x compile
+;  M-x tmm-menubar: Shows menu options
+;  M-x comment-region: Set comments on marked region
+;  C-c C-c: Execute script (Python mode and other)
+;  C-x C-f RET /arturo@bnsux.com:/home/arturo/.emacs: Open remote file usign
+;          TRAMP
+;  C-s C-w: Search word under cursor (equivalent to '*' in Vim)
+;  
+;  C-p:     Up
+;  C-n:     Down
+;  C-f:     Right
+;  C-b:     Left
+;-----------------------------------------------
