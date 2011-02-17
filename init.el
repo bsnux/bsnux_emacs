@@ -45,6 +45,7 @@
 									"zencoding"
 									"lorem"
 									"ropemacs"
+									"pyflake"
                    "color-theme"))
 
 ; Custom variables
