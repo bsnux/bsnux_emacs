@@ -41,6 +41,9 @@
 (load-cfg-files '("javascript"
 									"autocomplete"
 									"yasnippet"
+									"autopair"
+									"zencoding"
+									"lorem"
                    "color-theme"))
 
 ; Custom variables
@@ -80,21 +83,6 @@
 ; Delete unnecesary auto-save files
 (setq delete-auto-save-files t)	
 
-
-;;; Electric Pairs
-(add-hook 'python-mode-hook
-     (lambda ()
-      (define-key python-mode-map "\"" 'electric-pair)
-      (define-key python-mode-map "\'" 'electric-pair)
-      (define-key python-mode-map "(" 'electric-pair)
-      (define-key python-mode-map "[" 'electric-pair)
-      (define-key python-mode-map "{" 'electric-pair)))
-(defun electric-pair ()
-  "Insert character pair without sournding spaces"
-  (interactive)
-  (let (parens-require-spaces)
-    (insert-pair)))
-
 ;;; bind RET to py-newline-and-indent
 (add-hook 'python-mode-hook '(lambda () 
      (define-key python-mode-map "\C-m" 'newline-and-indent)))
@@ -112,6 +100,10 @@
 
 (custom-set-faces
  )
+;; Highlight +80 lines
+(setq whitespace-style '(lines))
+(setq whitespace-style '(empty tabs lines-tail trailing))
+(global-whitespace-mode t)
 
 ;; Fonts
 (set-face-attribute 'default nil :font "Consolas 11")
