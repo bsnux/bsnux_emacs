@@ -44,6 +44,7 @@
 									"autopair"
 									"zencoding"
 									"lorem"
+									"ropemacs"
                    "color-theme"))
 
 ; Custom variables
