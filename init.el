@@ -87,8 +87,10 @@
 (add-hook 'python-mode-hook '(lambda () 
      (define-key python-mode-map "\C-m" 'newline-and-indent)))
 
+;; Using spaces instead of tabs
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
+
 (setq-default py-indent-offset 4)
 
 (global-hl-line-mode 1)
