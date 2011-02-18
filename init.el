@@ -44,7 +44,9 @@
 									"autopair"
 									"zencoding"
 									"lorem"
+									"python-cfg"
 									"ropemacs"
+									;"autocomplete-ropemacs"
 									"pyflake"
                    "color-theme"))
 
@@ -85,15 +87,10 @@
 ; Delete unnecesary auto-save files
 (setq delete-auto-save-files t)	
 
-;;; bind RET to py-newline-and-indent
-(add-hook 'python-mode-hook '(lambda () 
-     (define-key python-mode-map "\C-m" 'newline-and-indent)))
-
 ;; Using spaces instead of tabs
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 
-(setq-default py-indent-offset 4)
 
 (global-hl-line-mode 1)
 
