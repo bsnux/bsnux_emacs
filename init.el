@@ -47,6 +47,7 @@
 									"python-cfg"
 									"ropemacs"
 									;"autocomplete-ropemacs"
+									;"autocomplete-python"
 									"pyflake"
                    "color-theme"))
 
@@ -75,9 +76,9 @@
 
 ; Key bindings
 (global-set-key "\C-l" 'goto-line)
+(global-set-key [f2] 'save-buffer)
 (global-set-key [f3] 'shell)
 (global-set-key [f4] 'indent-region)
-(global-set-key [f2] 'save-buffer)
 
 ; Default: text-mode with auto-fill
 (setq default-major-mode 'text-mode)	
