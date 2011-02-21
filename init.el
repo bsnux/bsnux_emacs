@@ -38,18 +38,20 @@
             (message "Loaded config file: %s" filename))
       	(message "Could not load file: %s" filename)))))
 
-(load-cfg-files '("javascript"
-									"autocomplete"
-									"yasnippet"
-									"autopair"
-									"zencoding"
-									"lorem"
+(load-cfg-files '("javascript-cfg"
+									"autocomplete-cfg"
+									"yasnippet-cfg"
+									"autopair-cfg"
+									"zencoding-cfg"
+									"lorem-cfg"
 									"python-cfg"
-									"ropemacs"
+									"pylint-cfg"
+									;"ipython-cfg"
+									"ropemacs-cfg"
 									;"autocomplete-ropemacs"
 									;"autocomplete-python"
-									"pyflake"
-                   "color-theme"))
+									"pyflake-cfg"
+                  "color-theme-cfg"))
 
 ; Custom variables
 (custom-set-variables
