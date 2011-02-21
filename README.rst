@@ -31,6 +31,7 @@ Installing Pymacs:
   $ tar -zxvf Pymacs-0.23.tar.gz
   $ cd Pymacs-0.23
   $ make
+  $ sudo make install
   $ cp pymacs.el ~/.emacs.d/vendor/pymacs.el
   $ emacs -batch -eval '(byte-compile-file "~/.emacs.d/vendor/pymacs.el")'
 
