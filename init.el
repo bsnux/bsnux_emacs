@@ -48,6 +48,7 @@
 									"python-cfg"
 									;"ipython-cfg"
 									"ropemacs-cfg"
+									"linum-cfg"
 									;"autocomplete-ropemacs"
 									;"autocomplete-python"
 									"pyflake-cfg"
@@ -103,6 +104,7 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 (custom-set-faces
+	'(linum ((t (:inherit shadow :background "gray95"))))
  )
 ;; Highlight +80 lines
 (setq whitespace-style '(lines))
@@ -110,6 +112,9 @@
 (global-whitespace-mode t)
 
 ;; Fonts
+;(set-face-attribute 'default nil :font "Inconsolata 12")
+;(set-face-attribute 'default nil :font "Inconsolata 11")
+;(set-face-attribute 'default nil :font "Consolas 10")
 (set-face-attribute 'default nil :font "Consolas 11")
 
 
