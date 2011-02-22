@@ -1,20 +1,30 @@
 EMACS. Simple command reference:
 ===========================================================
 
-Movement
---------
-**C-p**:     Up
-
-**C-n**:     Down
-
-**C-f**:     Right
-
-**C-b**:     Left
-
 Basic
 -----
 
 **C-x C-c**: Exit
+
+Mapping
+-------
+
+**F2**: Save file
+**F3**: Shell
+**F4**: Indent region
+**F7**: Copy and paste current line
+**C-l**: Go to line number
+
+Movement
+--------
+**C-p**: Up
+
+**C-n**: Down
+
+**C-f**: Right
+
+**C-b**: Left
+
 
 Copy & paste
 ------------
@@ -61,10 +71,18 @@ Search & replace
 ----------------
 
 **C-s**: Search forward (incremental)
+**C-r**: Search backward 
 
 **M-x replace-string**
 
 **C-x h**: Select all
+
+Undo & redo
+-----------
+
+*C-/*: Undo 
+*C-x u*: Undo
+*C_*: Redo
 
 Deleting
 --------
@@ -91,3 +109,5 @@ Misc
 **C-x C-f RET /user@host:/home/arturo/.emacs**: Open remote file usign TRAMP
 
 **C-s C-w**: Search word under cursor (equivalent to '*' in Vim)
+
+**M-x python-check**: Checking Python code using Pyflake

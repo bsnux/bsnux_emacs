@@ -46,6 +46,7 @@
 									"lorem-cfg"
 									"html-cfg"
 									"python-cfg"
+									;"django-cfg"
 									;"ipython-cfg"
 									"ropemacs-cfg"
 									"linum-cfg"
@@ -82,6 +83,10 @@
 (global-set-key [f2] 'save-buffer)
 (global-set-key [f3] 'shell)
 (global-set-key [f4] 'indent-region)
+;		Copy and paste current line
+(global-set-key [f7] "\C-a\C- \C-n\M-w\C-y")
+;		Copy current line
+(global-set-key [f8] "\C-a\C- \C-n\M-w")
 
 ; Default: text-mode with auto-fill
 (setq default-major-mode 'text-mode)	
