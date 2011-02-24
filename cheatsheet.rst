@@ -71,7 +71,12 @@ Search & replace
 ----------------
 
 **C-s**: Search forward (incremental)
+
 **C-r**: Search backward 
+
+**Search with previously searched string**: C-s C-s
+
+**M-x query-replace**: Search and replace, asking for confirmation 
 
 **M-x replace-string**
 

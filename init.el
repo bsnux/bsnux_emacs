@@ -39,14 +39,14 @@
       	(message "Could not load file: %s" filename)))))
 
 (load-cfg-files '("javascript-cfg"
-									"autocomplete-cfg"
 									"yasnippet-cfg"
 									"autopair-cfg"
 									"zencoding-cfg"
 									"lorem-cfg"
 									"html-cfg"
+									"django-cfg"
 									"python-cfg"
-									;"django-cfg"
+									"autocomplete-cfg"
 									;"ipython-cfg"
 									"ropemacs-cfg"
 									"linum-cfg"

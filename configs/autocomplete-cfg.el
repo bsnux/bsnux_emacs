@@ -1,5 +1,6 @@
 (require 'auto-complete)
 (global-auto-complete-mode t)
+
 ;;(when (require 'auto-complete nil t) ;; when autocomplete is available
 ;;  (require 'auto-complete-yasnippet)
 ;;  (require 'auto-complete-css)
