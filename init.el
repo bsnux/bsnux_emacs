@@ -87,6 +87,9 @@
 (global-set-key [f7] "\C-a\C- \C-n\M-w\C-y")
 ;		Copy current line
 (global-set-key [f8] "\C-a\C- \C-n\M-w")
+; Move between buffers
+(global-set-key [C-right] 'next-buffer)
+(global-set-key [C-left] 'previous-buffer)
 
 ; Default: text-mode with auto-fill
 (setq default-major-mode 'text-mode)	
