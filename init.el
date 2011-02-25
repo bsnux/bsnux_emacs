@@ -75,6 +75,9 @@
 (setq-default column-number-mode t)
 (setq-default line-number-mode t)
 
+; Show paren mode
+(show-paren-mode 1) 
+
 ; Tab.
 (setq default-tab-width 4);
 
@@ -90,6 +93,8 @@
 ; Move between buffers
 (global-set-key [C-right] 'next-buffer)
 (global-set-key [C-left] 'previous-buffer)
+; Replace string
+(global-set-key "\M-r" 'replace-string)
 
 ; Default: text-mode with auto-fill
 (setq default-major-mode 'text-mode)	
