@@ -116,3 +116,5 @@ Misc
 **C-s C-w**: Search word under cursor (equivalent to '*' in Vim)
 
 **M-x python-check**: Checking Python code using Pyflake
+
+**C-x 5 2**: Create a new window without a new process
