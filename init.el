@@ -53,6 +53,7 @@
 									;"autocomplete-ropemacs"
 									;"autocomplete-python"
 									"pyflake-cfg"
+									"mercurial-cfg"
                   "color-theme-cfg"))
 
 ; Custom variables

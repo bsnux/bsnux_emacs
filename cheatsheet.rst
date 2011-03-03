@@ -10,9 +10,13 @@ Mapping
 -------
 
 **F2**: Save file
+
 **F3**: Shell
+
 **F4**: Indent region
+
 **F7**: Copy and paste current line
+
 **C-l**: Go to line number
 
 Movement
@@ -85,9 +89,11 @@ Search & replace
 Undo & redo
 -----------
 
-*C-/*: Undo 
-*C-x u*: Undo
-*C_*: Redo
+**C-/**: Undo 
+
+**C-x u**: Undo
+
+**C_**: Redo
 
 Deleting
 --------
