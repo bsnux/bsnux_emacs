@@ -54,6 +54,7 @@
 									;"autocomplete-python"
 									"pyflake-cfg"
 									"mercurial-cfg"
+									"org-cfg"
                   "color-theme-cfg"))
 
 ; Custom variables
