@@ -11,6 +11,17 @@
 (defconst emacs-config-dir "~/.emacs.d/configs/")
 (defconst emacs-vendor-dir "~/.emacs.d/vendor/")
 
+;;; This was installed by package-install.el.
+;;; This provides support for the package system and
+;;; interfacing with ELPA, the package archive.
+;;; Move this code earlier if you want to reference
+;;; packages in your .emacs.
+(when
+    (load
+     (expand-file-name "~/.emacs.d/elpa/package.el"))
+  (package-initialize))
+
+
 (defun get-subdirs (directory)
   "Get a list of subdirectories under a given directory"
   (apply 'nconc (mapcar (lambda (fa)
@@ -116,17 +127,6 @@
 ;(set-face-attribute 'default nil :font "Consolas 10")
 (set-face-attribute 'default nil :font "Consolas 11")
 
-
-;;; This was installed by package-install.el.
-;;; This provides support for the package system and
-;;; interfacing with ELPA, the package archive.
-;;; Move this code earlier if you want to reference
-;;; packages in your .emacs.
-(when
-    (load
-     (expand-file-name "~/.emacs.d/elpa/package.el"))
-  (package-initialize))
-
 ;; A concise solution is to alter the interactive form of kill-ring-save and kill-region
 (put 'kill-ring-save 'interactive-form
      '(interactive
@@ -141,5 +141,3 @@
 
 ;; Set scroll-bar 
 (set-scroll-bar-mode 'right)
-
-(require 'nav)
