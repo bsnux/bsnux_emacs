@@ -53,6 +53,7 @@
 									"mercurial-cfg"
 									"org-cfg"
 									"keybinding-cfg"
+									"lusty-explorer"
                   "color-theme-cfg"))
 
 ; Custom variables
