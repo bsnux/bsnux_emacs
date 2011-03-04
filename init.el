@@ -140,3 +140,5 @@
 
 ;; Set scroll-bar 
 (set-scroll-bar-mode 'right)
+
+(require 'nav)
