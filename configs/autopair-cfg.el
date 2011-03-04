@@ -12,9 +12,6 @@
 (add-hook 'css-mode-hook 
            #'(lambda () (autopair-mode)))
 
-(add-hook 'js2-mode-hook 
-           #'(lambda () (autopair-mode)))
-
 (add-hook 'django-html-mode-hook 
            #'(lambda () (autopair-mode)))
 
