@@ -3,6 +3,9 @@
 (global-set-key [f2] 'save-buffer)
 (global-set-key [f3] 'shell)
 (global-set-key [f4] 'indent-region)
+; lusty
+(global-set-key [f5] 'lusty-file-explorer)
+(global-set-key [f6] 'lusty-buffer-explorer)
 ;		Copy and paste current line
 (global-set-key [f7] "\C-a\C- \C-n\M-w\C-y")
 ;		Copy current line

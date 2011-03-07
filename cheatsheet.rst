@@ -124,3 +124,5 @@ Misc
 **M-x python-check**: Checking Python code using Pyflake
 
 **C-x 5 2**: Create a new window without a new process
+
+**M-x load-file ENTER ~/bsnux_emacs/init.el ENTER**: Reloading your .emacs file while emacs is running
