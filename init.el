@@ -65,6 +65,7 @@
                   "org-cfg"
                   "keybinding-cfg"
                   "lusty-explorer-cfg"
+                  "uniquify-cfg"
                   "color-theme-cfg"))
 
 ; Custom variables
