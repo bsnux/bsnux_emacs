@@ -142,3 +142,10 @@
 
 ;; Set scroll-bar 
 (set-scroll-bar-mode 'right)
+
+;; Setting filename on the frame title
+(setq frame-title-format
+  '("" invocation-name ": "(:eval (if (buffer-file-name)
+                (abbreviate-file-name (buffer-file-name))
+                  "%b"))))
+
