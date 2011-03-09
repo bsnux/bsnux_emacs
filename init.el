@@ -149,3 +149,4 @@
                 (abbreviate-file-name (buffer-file-name))
                   "%b"))))
 
+(require 'twittering-mode)
