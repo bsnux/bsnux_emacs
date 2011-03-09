@@ -66,6 +66,7 @@
                   "keybinding-cfg"
                   "lusty-explorer-cfg"
                   "uniquify-cfg"
+                  "twittering-cfg"
                   "color-theme-cfg"))
 
 ; Custom variables
@@ -149,4 +150,3 @@
                 (abbreviate-file-name (buffer-file-name))
                   "%b"))))
 
-(require 'twittering-mode)
