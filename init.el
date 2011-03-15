@@ -150,3 +150,6 @@
                 (abbreviate-file-name (buffer-file-name))
                   "%b"))))
 
+;; Automatically re-visiting the file in current buffer when it was
+;; modified by an external program
+(global-auto-revert-mode 1)
