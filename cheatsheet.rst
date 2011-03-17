@@ -86,6 +86,8 @@ Search & replace
 
 **C-x h**: Select all
 
+**M-x rgrep**: Searching recursively for some strings (regexps) in a file tree
+
 Undo & redo
 -----------
 
