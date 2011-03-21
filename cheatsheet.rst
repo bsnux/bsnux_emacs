@@ -71,6 +71,13 @@ Windows
 
 **C-x 3**: Open a new window (side by side)
 
+Finding
+-------
+
+*M-x find-name-dired*: Find a file using *dired* mode
+*M-x rgrep*: Find text in files
+
+
 Search & replace
 ----------------
 
