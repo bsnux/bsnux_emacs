@@ -137,3 +137,5 @@ Misc
 **M-x load-file ENTER ~/bsnux_emacs/init.el ENTER**: Reloading your .emacs file while emacs is running
 
 **M-x twit**: Load twittering-mode
+
+**M-x ielm**: Launch an interactive elisp command line interface
