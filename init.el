@@ -67,6 +67,7 @@
                   "lusty-explorer-cfg"
                   "uniquify-cfg"
                   "twittering-cfg"
+                  "rinari-cfg"
                   "color-theme-cfg"))
 
 ; Custom variables
