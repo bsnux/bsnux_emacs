@@ -154,3 +154,6 @@
 ;; Automatically re-visiting the file in current buffer when it was
 ;; modified by an external program
 (global-auto-revert-mode 1)
+
+;; Start emacs as server
+(server-start)
