@@ -135,9 +135,9 @@ Misc
 
 **M-x comment-region**: Set comments on marked region
 
-**C-c C-c**: Execute script (Python mode and other)
+**C-c C-c**: Execute script (Python mode and others)
 
-**C-x C-f RET /user@host:/home/arturo/.emacs**: Open remote file usign TRAMP
+**C-x C-f RET /user@host:/home/arturo/.emacs**: Open remote file using TRAMP
 
 **C-s C-w**: Search word under cursor (equivalent to '*' in Vim)
 
