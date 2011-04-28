@@ -5,7 +5,7 @@ Basic
 -----
 
 **C-x C-c**: Exit
-
+n
 Mapping
 -------
 
@@ -148,5 +148,7 @@ Misc
 **M-x load-file ENTER ~/bsnux_emacs/init.el ENTER**: Reloading your .emacs file while emacs is running
 
 **M-x twit**: Load twittering-mode
+
+**u***: Open a buffer for posting a tweet (*twittering-mode*)
 
 **M-x ielm**: Launch an interactive elisp command line interface
