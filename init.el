@@ -68,6 +68,7 @@
                   "uniquify-cfg"
                   "twittering-cfg"
                   "rinari-cfg"
+                  "markdown-cfg.el"
                   "color-theme-cfg"))
 
 ; Custom variables
