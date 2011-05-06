@@ -58,7 +58,6 @@
                   "django-cfg"
                   "python-cfg"
                   "autocomplete-cfg"
-                  "ropemacs-cfg"
                   "linum-cfg"
                   "pyflake-cfg"
                   "mercurial-cfg"
