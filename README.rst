@@ -4,7 +4,7 @@ EMACS configuration --  Arturo Fernandez <arturo@bsnux.com>
 Description
 -----------
 
-EMACS configuration files specific for Python development
+EMACS configuration files
 
 Configuration tested using Fedora.
 
