@@ -1,3 +1,1 @@
-(require 'django-html-mode)
-(require 'django-mode)
-(add-to-list 'auto-mode-alist '("\\.html$" . django-html-mode))
+(load-library "~/.emacs.d/vendor/pony-mode/pony.el")
