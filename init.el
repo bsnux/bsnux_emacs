@@ -68,6 +68,7 @@
                   "twittering-cfg"
                   "rinari-cfg"
                   "markdown-cfg"
+                  "magit-cfg"
                   "color-theme-cfg"))
 
 ; Custom variables
