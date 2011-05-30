@@ -117,9 +117,8 @@ Column mode
 For editing columns we can use *CUA* mode:
 
 * **M-x** cua-mode
-* **Go to** first line
-* **C-n**
 * **C-Enter**
+* Mark text
 * Insert text!
 
 Misc
