@@ -55,10 +55,9 @@
                   "zencoding-cfg"
                   "lorem-cfg"
                   "html-cfg"
-                  "django-cfg"
                   "python-cfg"
+                  "django-cfg"
                   "autocomplete-cfg"
-                  "ropemacs-cfg"
                   "linum-cfg"
                   "pyflake-cfg"
                   "mercurial-cfg"
@@ -69,6 +68,7 @@
                   "twittering-cfg"
                   "rinari-cfg"
                   "markdown-cfg"
+                  "magit-cfg"
                   "color-theme-cfg"))
 
 ; Custom variables
