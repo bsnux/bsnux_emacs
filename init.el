@@ -70,6 +70,7 @@
                   "markdown-cfg"
                   "magit-cfg"
                   "yaml-cfg"
+                  "dired-cfg"
                   "color-theme-cfg"))
 
 ; Custom variables
