@@ -7,6 +7,10 @@
 ;; Where:
 ;;    [#A] => Priority from 'A' to 'D'
 ;;    :personal: => Tag
+;; Invoking remember-mode for quick note-taking
+;;    $ emacsclient -e "(remember-other-frame)"
+;; Markup:
+;;    *bold*, /italic/, _underlined_, =code= and ~verbatim~, +strike-through+
 ;; Shortcuts:
 ;;    S-left/right – cycle workflow
 ;;    C-c C-v – show todos in current document
@@ -33,3 +37,23 @@
 ;; States for tasks
 (setq org-todo-keywords
   '((sequence "TODO" "DONE" "CANCEL" "IN-PROGRESS" "WAITING")))
+;; remember-mode with org-mode
+(require 'remember)
+(setq remember-annotation-functions '(org-remember-annotation))
+(setq remember-handler-functions '(org-remember-handler))
+(add-hook 'remember-mode-hook 'org-remember-apply-template)
+;; creating a pop-up for remember-mode
+(defadvice remember-other-frame (around remember-frame-parameters activate)
+  "Set some frame parameters for the remember frame."
+  (let ((default-frame-alist (append
+                              '(
+                                (name . "*Remember*")
+                                (width . 80)
+                                (height . 10)
+                                (vertical-scroll-bars . nil)
+                                (menu-bar-lines . 0)
+                                (tool-bar-lines . 0)
+                                )
+                              default-frame-alist)))
+    ad-do-it
+    ))
