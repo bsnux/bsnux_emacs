@@ -41,10 +41,16 @@
 (setq org-todo-keywords
   '((sequence "TODO" "DONE" "CANCEL" "IN-PROGRESS" "WAITING")))
 ;; remember-mode with org-mode
-(require 'remember)
+(org-remember-insinuate)
 (setq remember-annotation-functions '(org-remember-annotation))
 (setq remember-handler-functions '(org-remember-handler))
 (add-hook 'remember-mode-hook 'org-remember-apply-template)
+(setq org-remember-templates
+      '(
+        ("Journal" ?j "* %U %?\n\n  %i\n  %a" "~/Dropbox/MobileOrg/journal.org")
+        ("Notes" ?n "* %^{Title}\n  %i\n  %a" "~/Dropbox/MobileOrg/notes.org" "Notes")
+        )
+      )
 ;; creating a pop-up for remember-mode
 (defadvice remember-other-frame (around remember-frame-parameters activate)
   "Set some frame parameters for the remember frame."
