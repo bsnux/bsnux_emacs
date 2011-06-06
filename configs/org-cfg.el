@@ -1,12 +1,16 @@
 ;; MobileOrg + Dropbox + org-mode
 ;; Don't forget to create your ~/Dropbox/MobileOrg folder!
 ;;
-;; Example of GTD task: 
+;; Example of GTD task
 ;; ** TODO [#A] Buy milk :personal:
 ;;    DEADLINE: <2011-03-11 Fri>
 ;; Where:
 ;;    [#A] => Priority from 'A' to 'D'
-;;    :personal: => Tag 
+;;    :personal: => Tag
+;; Shortcuts:
+;;    S-left/right – cycle workflow
+;;    C-c C-v – show todos in current document
+;;    C-c a - call the agenda
 
 ;; Set to the location of your Org files on your local system
 (setq org-directory "~/org")
@@ -26,4 +30,6 @@
          ("A" agenda ""
           ((org-agenda-ndays 1)
            (org-agenda-overriding-header "Today")))))
-
+;; States for tasks
+(setq org-todo-keywords
+  '((sequence "TODO" "DONE" "CANCEL" "IN-PROGRESS" "WAITING")))

@@ -4,3 +4,6 @@ ac-comphist.dat
 eproject.lst
 .org-id-locations
 tramp
+.*
+#*#
+**/#*#
