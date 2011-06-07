@@ -160,3 +160,7 @@
 
 ;; Start emacs as server
 (server-start)
+
+;; Setting colors for status bar
+(set-face-foreground 'modeline "black")
+(set-face-background 'modeline "grey")
