@@ -81,6 +81,7 @@
   ;; If there is more than one, they won't work right.
  '(c-basic-offset 4)
  '(c-default-style "bsd")
+ '(php-completion-file "~/.emacs.d/configs/php-completion-file")
  '(inhibit-startup-screen t))
 
 ; Syntax highlighting

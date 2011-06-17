@@ -17,3 +17,6 @@
 (global-set-key [C-left] 'previous-buffer)
 ; Replace string
 (global-set-key "\M-r" 'replace-string)
+; PHP complete function
+(global-set-key "\M-1" 'php-complete-function)
+
