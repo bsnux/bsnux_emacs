@@ -131,8 +131,9 @@
 ;; Fonts
 ;(set-face-attribute 'default nil :font "Inconsolata 12")
 ;(set-face-attribute 'default nil :font "Inconsolata 11")
-(set-face-attribute 'default nil :font "Consolas-10.5")
+;(set-face-attribute 'default nil :font "Consolas-10.5")
 ;(set-face-attribute 'default nil :font "Consolas 11")
+(set-face-attribute 'default nil :font "Monaco 13")
 
 ;; A concise solution is to alter the interactive form of kill-ring-save and kill-region
 (put 'kill-ring-save 'interactive-form
