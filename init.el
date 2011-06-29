@@ -71,6 +71,7 @@
                   "magit-cfg"
                   "yaml-cfg"
                   "dired-cfg"
+                  "geben-cfg"
                   "color-theme-cfg"))
 
 ; Custom variables
