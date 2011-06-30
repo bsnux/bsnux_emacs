@@ -66,3 +66,13 @@
                               default-frame-alist)))
     ad-do-it
     ))
+
+;; RTM conf. It allows to integrate tasks for RTM into 'gtd.org' file
+;; M-x org-feed-update-all
+(setq org-feed-alist
+      '(("Remember The Milk"
+         "https://www.rememberthemilk.com/rss/bsnux/"
+         "~/Dropbox/gtd.org"
+         "Remember The Milk"
+         :template "* TODO %title\n  %a\n "
+         )))
