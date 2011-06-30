@@ -165,3 +165,5 @@
 ;; Setting colors for status bar
 (set-face-foreground 'modeline "black")
 (set-face-background 'modeline "grey")
+
+(require 'slack-rtm)
