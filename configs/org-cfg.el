@@ -7,6 +7,8 @@
 ;; Where:
 ;;    [#A] => Priority from 'A' to 'D'
 ;;    :personal: => Tag
+;; Insert a DEADLINE:
+;;    C-c C-d
 ;; Invoking remember-mode for quick note-taking
 ;;    $ emacsclient -e "(remember-other-frame)"
 ;; Markup:
