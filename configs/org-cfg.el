@@ -41,6 +41,11 @@
 ;; States for tasks
 (setq org-todo-keywords
   '((sequence "TODO" "DONE" "CANCEL" "IN-PROGRESS" "WAITING")))
+;; Different color for status
+(setq org-todo-keyword-faces
+           '(("TODO" . (:foreground "DarkOrange1" :weight bold))
+             ("DONE" . (:foregorund "green" :weight bold))
+             ("CANCEL" . (:foreground "blue" :weight bold))))
 ;; remember-mode with org-mode
 (org-remember-insinuate)
 (setq remember-annotation-functions '(org-remember-annotation))
