@@ -8,6 +8,14 @@ EMACS configuration files specific for Python development
 
 Configuration tested using Fedora.
 
+Usage
+-----
+
+You can load different configuration files to use Emacs with different
+programming languages. Please, take a look at *init.el* and load only
+files that you need. For example, if you aren't a PHP developer then
+you can delete the *php-config* entry for the *init.el* file.
+
 Fedora packages installed
 -------------------------
 
