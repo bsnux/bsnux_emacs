@@ -72,3 +72,5 @@
                               default-frame-alist)))
     ad-do-it
     ))
+; Start the agenda on Monday
+(setq org-agenda-start-on-weekday nil)
