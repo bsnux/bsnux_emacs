@@ -124,10 +124,6 @@
 ;; Changes all yes/no questions to y/n type
 (fset 'yes-or-no-p 'y-or-n-p)
 
-(custom-set-faces
-	'(linum ((t (:inherit shadow :background "gray95"))))
- )
-
 ;; Highlight +80 lines
 (setq whitespace-style '(lines))
 (setq whitespace-style '(empty tabs lines-tail trailing))
@@ -174,3 +170,8 @@
 ;; Setting colors for status bar
 (set-face-foreground 'modeline "black")
 (set-face-background 'modeline "grey")
+
+;; Custom faces
+(custom-set-faces
+   '(linum ((t (:inherit shadow :background "gray95"))))
+)
