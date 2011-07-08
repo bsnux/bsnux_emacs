@@ -174,20 +174,4 @@
 ;; Custom faces
 (custom-set-faces
    '(linum ((t (:inherit shadow :background "gray95"))))
-   ;; Faces for calendar
-   '(cfw:face-title ((t :foreground "darkgoldenrod3" :weight bold :height 2.0 :inherit variable-pitch)))
-   '(cfw:face-header ((t :foreground "maroon2" :weight bold)))
-   '(cfw:face-sunday ((t :foreground "red" :weight bold)))
-   '(cfw:face-saturday ((t :foreground "Blue" :weight bold)))
-   '(cfw:face-holiday ((t :background "grey10" :foreground "purple" :weight bold)))
-   '(cfw:face-grid ((t :foreground "DarkGrey")))
-   '(cfw:face-default-content ((t :foreground "green2")))
-   '(cfw:face-periods ((t :foreground "cyan")))
-   '(cfw:face-day-title ((t  :background "grey10")))
-   '(cfw:face-default-day ((t :weight bold :inherit cfw:face-day-title)))
-   '(cfw:face-annotation ((t :foreground "RosyBrown" :inherit cfw:face-day-title)))
-   '(cfw:face-disable ((t :foreground "DarkGray" :inherit cfw:face-day-title)))
-   '(cfw:face-today-title ((t :background "red4" :weight bold)))
-   '(cfw:face-today ((t :foreground "Cyan" :weight bold)))
-   '(cfw:face-select ((t :background "Blue4")))
 )
