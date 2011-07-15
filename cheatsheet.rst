@@ -78,9 +78,9 @@ Windows
 Finding
 -------
 
-*M-x find-name-dired*: Find a file using *dired* mode
+**M-x find-name-dired**: Find a file using *dired* mode
 
-*M-x rgrep*: Find text in files
+**M-x rgrep**: Find text in files
 
 
 Search & replace
@@ -121,10 +121,10 @@ Column mode
 
 For editing columns we can use *CUA* mode:
 
-* **M-x** cua-mode
-* **C-Enter**
-* Mark text
-* Insert text!
+1. **M-x** cua-mode
+2. **C-Enter**
+3. Mark text
+4. Insert text!
 
 Tags
 ----
@@ -132,9 +132,9 @@ Tags
 We can use *etags* command for generating our *TAGS* file, which is
 used by *Emacs*
 
-*M-.*: Find tag
+**M-.**: Find tag
 
-*M-,*: Go to next match
+**M-,**: Go to next match
 
 Misc
 ----
