@@ -47,7 +47,7 @@
           (progn
             (load (concat filename))
             (message "Loaded config file: %s" filename))
-      	(message "Could not load file: %s" filename)))))
+            (message "Could not load file: %s" filename)))))
 
 (load-cfg-files '("javascript-cfg"
                   "yasnippet-cfg"
@@ -73,7 +73,10 @@
                   "dired-cfg"
                   "geben-cfg"
                   "php-cfg"
-                  "color-theme-cfg"))
+                  "cfw-cfg"
+                  "color-theme-cfg"
+                  "pomodoro-cfg"
+                  ))
 
 ; Custom variables
 (custom-set-variables
@@ -97,18 +100,18 @@
 (setq-default line-number-mode t)
 
 ; Show paren mode
-(show-paren-mode 1) 
+(show-paren-mode 1)
 
 ; Tab.
 (setq default-tab-width 4);
 
 ; Default: text-mode with auto-fill
-(setq default-major-mode 'text-mode)	
-(setq text-mode-hook			
+(setq default-major-mode 'text-mode)
+(setq text-mode-hook
        '(lambda () (auto-fill-mode 1)))
 
 ; Delete unnecesary auto-save files
-(setq delete-auto-save-files t)	
+(setq delete-auto-save-files t)
 
 ;; Using spaces instead of tabs
 (setq-default indent-tabs-mode nil)
@@ -122,9 +125,6 @@
 ;; Changes all yes/no questions to y/n type
 (fset 'yes-or-no-p 'y-or-n-p)
 
-(custom-set-faces
-	'(linum ((t (:inherit shadow :background "gray95"))))
- )
 ;; Highlight +80 lines
 (setq whitespace-style '(lines))
 (setq whitespace-style '(empty tabs lines-tail trailing))
@@ -132,10 +132,13 @@
 
 ;; Fonts
 ;(set-face-attribute 'default nil :font "Inconsolata 12")
-;(set-face-attribute 'default nil :font "Inconsolata 11")
+;(set-face-attribute 'default nil :font "Inconsolata-10.5")
 (set-face-attribute 'default nil :font "Consolas-10.5")
+;(set-face-attribute 'default nil :font "Droid Sans Mono 10")
+;(set-face-attribute 'default nil :font "Deja Vu Sans Mono 10")
+;(set-face-attribute 'default nil :font "Andale Mono 10")
 ;(set-face-attribute 'default nil :font "Consolas 11")
-;(set-face-attribute 'default nil :font "Monaco 13")
+;(set-face-attribute 'default nil :font "Monaco 10")
 
 ;; A concise solution is to alter the interactive form of kill-ring-save and kill-region
 (put 'kill-ring-save 'interactive-form
@@ -143,13 +146,13 @@
        (if (use-region-p)
            (list (region-beginning) (region-end))
          (list (line-beginning-position) (line-beginning-position 2)))))
-    (put 'kill-region 'interactive-form      
+    (put 'kill-region 'interactive-form
      '(interactive
        (if (use-region-p)
            (list (region-beginning) (region-end))
          (list (line-beginning-position) (line-beginning-position 2)))))
 
-;; Set scroll-bar 
+;; Set scroll-bar
 (set-scroll-bar-mode 'right)
 
 ;; Setting filename on the frame title
@@ -168,3 +171,8 @@
 ;; Setting colors for status bar
 (set-face-foreground 'modeline "black")
 (set-face-background 'modeline "grey")
+
+;; Custom faces
+(custom-set-faces
+   '(linum ((t (:inherit shadow :background "gray95"))))
+)
