@@ -1,13 +1,13 @@
-EMACS. Simple command reference:
-===========================================================
+Emacs. Simple command reference:
+================================
 
 Basic
 -----
 
 **C-x C-c**: Exit
-n
-Mapping
--------
+
+Mapping (bsnux_emacs keybinding)
+--------------------------------
 
 **F2**: Save file
 
@@ -18,6 +18,10 @@ Mapping
 **F7**: Copy and paste current line
 
 **C-l**: Go to line number
+
+**F10**: Hide (folding) block
+
+**F11**: Show (folding) block
 
 Movement
 --------
@@ -75,6 +79,7 @@ Finding
 -------
 
 *M-x find-name-dired*: Find a file using *dired* mode
+
 *M-x rgrep*: Find text in files
 
 
@@ -83,11 +88,11 @@ Search & replace
 
 **C-s**: Search forward (incremental)
 
-**C-r**: Search backward 
+**C-r**: Search backward
 
 **Search with previously searched string**: C-s C-s
 
-**M-x query-replace**: Search and replace, asking for confirmation 
+**M-x query-replace**: Search and replace, asking for confirmation
 
 **M-x replace-string**
 
@@ -98,7 +103,7 @@ Search & replace
 Undo & redo
 -----------
 
-**C-/**: Undo 
+**C-/**: Undo
 
 **C-x u**: Undo
 
@@ -120,6 +125,16 @@ For editing columns we can use *CUA* mode:
 * **C-Enter**
 * Mark text
 * Insert text!
+
+Tags
+----
+
+We can use *etags* command for generating our *TAGS* file, which is
+used by *Emacs*
+
+*M-.*: Find tag
+
+*M-,*: Go to next match
 
 Misc
 ----
