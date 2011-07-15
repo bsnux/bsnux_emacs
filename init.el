@@ -76,6 +76,7 @@
                   "cfw-cfg"
                   "color-theme-cfg"
                   "pomodoro-cfg"
+                  "hs-cfg"
                   ))
 
 ; Custom variables
