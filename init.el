@@ -77,6 +77,7 @@
                   "color-theme-cfg"
                   "pomodoro-cfg"
                   "hs-cfg"
+                  "maps-cfg"
                   ))
 
 ; Custom variables
