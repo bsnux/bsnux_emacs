@@ -1,22 +1,38 @@
 ;; MobileOrg + Dropbox + org-mode
 ;; Don't forget to create your ~/Dropbox/MobileOrg folder!
-;;
+;;-------------------------------------------------------
 ;; Example of GTD task
 ;; ** TODO [#A] Buy milk :personal:
 ;;    DEADLINE: <2011-03-11 Fri>
 ;; Where:
 ;;    [#A] => Priority from 'A' to 'D'
 ;;    :personal: => Tag
-;; Insert a DEADLINE:
-;;    C-c C-d
+;; Mind sweep technique:
+;;     An excellent way of ensuring you have thought of everything for your file
+;;     is to do a "mind-sweep". Start a heading at the end of the file and start
+;;     a new line with two asterisks. Set a timer or alarm clock and spend five
+;;     minutes brainstorming all the things on your mind that need doing. As you
+;;     think of the item, type a brief description, then Alt-Enter to start a
+;;     new line to create a headline at the same level. Work fast to get
+;;     everything out of your mind. When the timer is finished, review
+;;     the list, add tags and move to the appropriate section of the file.
 ;; Invoking remember-mode for quick note-taking
 ;;    $ emacsclient -e "(remember-other-frame)"
 ;; Markup:
 ;;    *bold*, /italic/, _underlined_, =code= and ~verbatim~, +strike-through+
+;; In-buffer settings examples:
+;;    #+STARTUP: hideall
+;;    #+TAGS: office(o) home(h) books(b)
+;;    #+PRIORITIES: A B C
 ;; Shortcuts:
-;;    S-left/right – cycle workflow
-;;    C-c C-v – show todos in current document
-;;    C-c a - call the agenda
+;;    Shif-left/right         : cycle workflow
+;;    C-c C-v                 : show todos in current document
+;;    C-c a                   : call the agenda
+;;    C-c C-q                 : set tag
+;;    C-c ,                   : set priority
+;;    M-enter                 : new item at current level
+;;    Insert a deadline       : C-c C-d
+;;-------------------------------------------------------
 
 ;; Global shortcut to invoke org-agenda
 (global-set-key "\C-ca" 'org-agenda)
@@ -75,3 +91,9 @@
     ))
 ; Start the agenda on Monday
 (setq org-agenda-start-on-weekday nil)
+
+; Open my main GTD file faster using M-x gtd
+(defun gtd ()
+   (interactive)
+   (find-file "~/Dropbox/gtd.org")
+ )
