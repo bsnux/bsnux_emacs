@@ -1,0 +1,3 @@
+[submodule "vendor/google-maps"]
+	path = vendor/google-maps
+	url = git://git.naquadah.org/google-maps.git
