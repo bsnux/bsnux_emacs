@@ -32,6 +32,7 @@
 ;;    C-c ,                   : set priority
 ;;    M-enter                 : new item at current level
 ;;    Insert a deadline       : C-c C-d
+;;    Selecting interval dates: C-. (one for each date)
 ;;-------------------------------------------------------
 
 ;; Global shortcut to invoke org-agenda
