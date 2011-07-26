@@ -136,6 +136,32 @@ used by *Emacs*
 
 **M-,**: Go to next match
 
+Org-mode
+--------
+
+* Markup:
+
+   *bold*, /italic/, _underlined_, =code= and ~verbatim~, +strike-through+
+
+* In-buffer settings examples:
+
+   #+STARTUP: hideall
+
+   #+TAGS: office(o) home(h) books(b)
+
+   #+PRIORITIES: A B C
+
+* Shortcuts:
+
+  * **Shif-left/right**         : cycle workflow
+  * **C-c C-v**                 : show todos in current document
+  * **C-c a**                   : call the agenda
+  * **C-c C-q**                 : set tag
+  * **C-c ,**                   : set priority
+  * **M-enter**                 : new item at current level
+  * **Insert a deadline**       : C-c C-d
+  * **Selecting interval dates**: C-. (one for each date)
+
 Misc
 ----
 
