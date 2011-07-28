@@ -110,10 +110,13 @@
 ; Open my main GTD file faster using M-x gtd
 (defun gtd ()
    (interactive)
-   (let ((color-theme-is-global nil))
-    (select-frame (make-frame))
-    (color-theme-solarized-light)
-    (find-file "~/Dropbox/gtd.org"))
+   (find-file "~/Dropbox/gtd.org")
+ )
+
+; Open my events file
+(defun events ()
+   (interactive)
+   (find-file "~/Dropbox/events.org")
  )
 
 ; Open my calendar faster using M-x mycal
@@ -121,6 +124,6 @@
    (interactive)
    (let ((color-theme-is-global nil))
     (select-frame (make-frame))
-    (color-theme-solarized-light)
+    (color-theme-emacs-21)
     (cfw:open-org-calendar))
 )
