@@ -100,3 +100,9 @@
    (interactive)
    (find-file "~/Dropbox/gtd.org")
  )
+
+; Open my calendar faster using M-x mycal
+(defun mycal()
+   (interactive)
+   (cfw:open-org-calendar)
+)

@@ -165,6 +165,11 @@ Org-mode
   * **C-c C-d**                 : Insert a deadline
   * **C-.** (one for each date) : Selecting interval dates
 
+Chinese
+-------
+
+**M-x set-input-method** enter **chinese-py**: Pinyin
+
 Misc
 ----
 
