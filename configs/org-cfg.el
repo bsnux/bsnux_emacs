@@ -39,15 +39,20 @@
 
 ;; Global shortcut to invoke org-agenda
 (global-set-key "\C-ca" 'org-agenda)
+
 ;; Set to the location of your Org files on your local system
 (setq org-directory "~/org")
+
 ;; Files for syncing
 (setq org-agenda-files (quote ( "~/Dropbox/gtd.org"
                                 "~/Dropbox/events.org")))
+
 ;; Set to the name of the file where new notes will be stored
 (setq org-mobile-inbox-for-pull "~/org/flagged.org")
+
 ;; Set to <your Dropbox root directory>/MobileOrg.
 (setq org-mobile-directory "~/Dropbox/MobileOrg")
+
 ;; Custom agenda view
 (setq org-mobile-force-id-on-agenda-items nil)
 (setq org-agenda-custom-commands
@@ -58,14 +63,18 @@
          ("A" agenda ""
           ((org-agenda-ndays 1)
            (org-agenda-overriding-header "Today")))))
+
 ;; States for tasks
 (setq org-todo-keywords
   '((sequence "TODO" "DONE" "CANCEL" "IN-PROGRESS" "WAITING")))
+
 ;; Different color for status
 (setq org-todo-keyword-faces
-           '(("TODO" . (:foreground "DarkOrange1" :weight bold))
+           '(("TODO" . (:foreground "red" :weight bold :underline t))
              ("DONE" . (:foregorund "green" :weight bold))
+             ("IN-PROGRESS" . (:foregorund "white" :weight bold :background "black"))
              ("CANCEL" . (:foreground "blue" :weight bold))))
+
 ;; remember-mode with org-mode
 (org-remember-insinuate)
 (setq remember-annotation-functions '(org-remember-annotation))
@@ -77,6 +86,7 @@
         ("Notes" ?n "* %^{Title}\n  %i\n  %a" "~/Dropbox/MobileOrg/notes.org" "Notes")
         )
       )
+
 ;; creating a pop-up for remember-mode
 (defadvice remember-other-frame (around remember-frame-parameters activate)
   "Set some frame parameters for the remember frame."
@@ -92,17 +102,25 @@
                               default-frame-alist)))
     ad-do-it
     ))
+
 ; Start the agenda on Monday
-(setq org-agenda-start-on-weekday nil)
+(setq org-agenda-start-on-weekday 1)
+(setq calendar-week-start-day 1)
 
 ; Open my main GTD file faster using M-x gtd
 (defun gtd ()
    (interactive)
-   (find-file "~/Dropbox/gtd.org")
+   (let ((color-theme-is-global nil))
+    (select-frame (make-frame))
+    (color-theme-solarized-light)
+    (find-file "~/Dropbox/gtd.org"))
  )
 
 ; Open my calendar faster using M-x mycal
 (defun mycal()
    (interactive)
-   (cfw:open-org-calendar)
+   (let ((color-theme-is-global nil))
+    (select-frame (make-frame))
+    (color-theme-solarized-light)
+    (cfw:open-org-calendar))
 )

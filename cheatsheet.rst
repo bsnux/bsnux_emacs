@@ -66,8 +66,8 @@ Buffers
 **C-x b** : Switch between buffers
 
 
-Windows
--------
+Windows & frames
+----------------
 
 **C-x o** : Switch between windows
 
@@ -75,7 +75,9 @@ Windows
 
 **C-x 3** : Open a new window (side by side)
 
-**C-x 5 2** : Create a new window without a new process
+**C-x 5 2** : Create a new frame without a new process
+
+**C-x 5 0** : Close this frame
 
 
 Finding
