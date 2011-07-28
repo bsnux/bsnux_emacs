@@ -18,6 +18,8 @@
 ;;     the list, add tags and move to the appropriate section of the file.
 ;; Invoking remember-mode for quick note-taking
 ;;    $ emacsclient -e "(remember-other-frame)"
+;; See calendar using 'cfw-mode':
+;;    M-x cfw:open-org-calendar
 ;; Markup:
 ;;    *bold*, /italic/, _underlined_, =code= and ~verbatim~, +strike-through+
 ;; In-buffer settings examples:
