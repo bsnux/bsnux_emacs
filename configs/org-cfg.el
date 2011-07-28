@@ -71,8 +71,8 @@
 ;; Different color for status
 (setq org-todo-keyword-faces
            '(("TODO" . (:foreground "red" :weight bold :underline t))
-             ("DONE" . (:foregorund "green" :weight bold))
-             ("IN-PROGRESS" . (:foregorund "white" :weight bold :background "black"))
+             ("DONE" . (:foreground "#7EBE48" :weight bold))
+             ("IN-PROGRESS" . (:foregorund "white" :weight bold :background "grey"))
              ("CANCEL" . (:foreground "blue" :weight bold))))
 
 ;; remember-mode with org-mode
