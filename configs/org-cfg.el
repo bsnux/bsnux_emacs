@@ -124,6 +124,8 @@
    (interactive)
    (let ((color-theme-is-global nil))
     (select-frame (make-frame))
+    (set-frame-height (selected-frame) 50)
+    (set-frame-width (selected-frame) 110)
     (color-theme-emacs-21)
     (cfw:open-org-calendar))
 )
