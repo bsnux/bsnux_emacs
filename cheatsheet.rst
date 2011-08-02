@@ -167,10 +167,23 @@ Org-mode
   * **C-c C-d**                 : Insert a deadline
   * **C-.** (one for each date) : Selecting interval dates
 
+Input methods
+-------------
+
+* **M-x describe-input-method**: Info. about current input method
+
 Chinese
 -------
 
-**M-x set-input-method** enter **chinese-py**: Pinyin
+**M-x set-input-method** RET:
+
+  * **chinese-py**: Pinyin without tones
+  * **chinese-tonepy**: Pinyin with tones
+
+    * Example: *ni3*
+  * **chinese-sisheng**: It doesn't generate Hanzi
+
+    * Example: *ni3* generates *nǐ*
 
 Misc
 ----
