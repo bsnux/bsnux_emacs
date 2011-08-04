@@ -78,6 +78,7 @@
                   "pomodoro-cfg"
                   "hs-cfg"
                   "maps-cfg"
+                  "arduino-cfg"
                   ))
 
 ; Custom variables
