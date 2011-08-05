@@ -37,6 +37,9 @@
 ;;    Selecting interval dates: C-. (one for each date)
 ;;-------------------------------------------------------
 
+;; Keeping track of when a certain TODO item was finished
+(setq org-log-done 'time)
+
 ;; Global shortcut to invoke org-agenda
 (global-set-key "\C-ca" 'org-agenda)
 
@@ -66,7 +69,7 @@
 
 ;; States for tasks
 (setq org-todo-keywords
-  '((sequence "TODO" "DONE" "CANCEL" "IN-PROGRESS" "WAITING")))
+  '((sequence "TODO" "IN-PROGRESS" "DONE(!)" "CANCEL")))
 
 ;; Different color for status
 (setq org-todo-keyword-faces
