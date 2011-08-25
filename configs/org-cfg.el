@@ -47,8 +47,8 @@
 (setq org-directory "~/org")
 
 ;; Files for syncing
-(setq org-agenda-files (quote ( "~/Dropbox/gtd.org"
-                                "~/Dropbox/events.org")))
+(setq org-agenda-files (quote ( "~/Dropbox/org/gtd.org"
+                                "~/Dropbox/org/events.org")))
 
 ;; Set to the name of the file where new notes will be stored
 (setq org-mobile-inbox-for-pull "~/org/flagged.org")
@@ -113,13 +113,13 @@
 ; Open my main GTD file faster using M-x gtd
 (defun gtd ()
    (interactive)
-   (find-file "~/Dropbox/gtd.org")
+   (find-file "~/Dropbox/org/gtd.org")
  )
 
 ; Open my events file
 (defun events ()
    (interactive)
-   (find-file "~/Dropbox/events.org")
+   (find-file "~/Dropbox/org/events.org")
  )
 
 ; Open my calendar faster using M-x mycal
