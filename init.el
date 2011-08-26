@@ -175,6 +175,8 @@
 (set-face-foreground 'modeline "black")
 (set-face-background 'modeline "grey")
 
+(setq initial-scratch-message ";; scratch buffer: Lisp evaluation & draft notes")
+
 ;; Custom faces
 (custom-set-faces
    '(linum ((t (:inherit shadow :background "gray95"))))
