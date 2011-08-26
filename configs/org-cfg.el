@@ -111,13 +111,13 @@
 (setq calendar-week-start-day 1)
 
 ; Open my main GTD file faster using M-x gtd
-(defun gtd ()
+(defun mygtd ()
    (interactive)
    (find-file "~/Dropbox/org/gtd.org")
  )
 
 ; Open my events file
-(defun events ()
+(defun myevents ()
    (interactive)
    (find-file "~/Dropbox/org/events.org")
  )
