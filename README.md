@@ -6,7 +6,16 @@ Description
 
 EMACS configuration files specific for Python development
 
-Configuration tested using Fedora.
+Configuration tested using [Fedora Linux](http://fedoraproject.org).
+
+Fresh installation
+------------------
+
+1. Clone this project
+2. Update modules used by the project:
+
+    * $ git submodule init
+    * $ git submodule update
 
 Usage
 -----
