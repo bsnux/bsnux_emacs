@@ -11,6 +11,30 @@
 (defconst emacs-config-dir "~/.emacs.d/configs/")
 (defconst emacs-vendor-dir "~/.emacs.d/vendor/")
 
+;; Functions for printing current system name and type
+(defun print-system-name()
+   (interactive)
+   "Get current system's name"
+   (print system-name)
+)
+(defun print-system-type()
+   (interactive)
+   "Get current system type"
+   (print system-type)
+)
+
+;; Functions for load different configuration options based on each machine
+(defun system-is-linux ()
+  (interactive)
+  "Return true if the machine is running Linux"
+  (string-equal system-type "gnu/linux")
+)
+(defun system-is-luke ()
+  (interactive)
+  "Return true if the machine is Luke (home laptop)"
+  (string-equal system-name "luke")
+)
+
 ;;; This was installed by package-install.el.
 ;;; This provides support for the package system and
 ;;; interfacing with ELPA, the package archive.
@@ -134,14 +158,11 @@
 (global-whitespace-mode t)
 
 ;; Fonts
-;(set-face-attribute 'default nil :font "Inconsolata 12")
-;(set-face-attribute 'default nil :font "Inconsolata-10.5")
-(set-face-attribute 'default nil :font "Consolas-10.5")
-;(set-face-attribute 'default nil :font "Droid Sans Mono 10")
-;(set-face-attribute 'default nil :font "Deja Vu Sans Mono 10")
-;(set-face-attribute 'default nil :font "Andale Mono 10")
-;(set-face-attribute 'default nil :font "Consolas 11")
-;(set-face-attribute 'default nil :font "Monaco 10")
+(if (system-is-linux)
+  (set-face-attribute 'default nil :font "Consolas-10.5")
+  (ding)
+  (set-face-attribute 'default nil :font "Monaco 10")
+)
 
 ;; A concise solution is to alter the interactive form of kill-ring-save and kill-region
 (put 'kill-ring-save 'interactive-form

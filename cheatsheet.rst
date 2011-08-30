@@ -215,3 +215,5 @@ Misc
 **u*** : Open a buffer for posting a tweet (*twittering-mode*)
 
 **M-x ielm** : Launch an interactive elisp command line interface
+
+**C-x 4 a** : Adding a new entry for *ChangeLog* file
