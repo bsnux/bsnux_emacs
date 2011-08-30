@@ -34,7 +34,7 @@
 ;;    C-c ,                   : set priority
 ;;    M-enter                 : new item at current level
 ;;    Insert a deadline       : C-c C-d
-;;    Selecting interval dates: C-. (one for each date)
+;;    Selecting interval dates: C-c . (one for each date)
 ;;-------------------------------------------------------
 
 ;; Keeping track of when a certain TODO item was finished
