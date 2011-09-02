@@ -96,7 +96,6 @@
                   "yaml-cfg"
                   "dired-cfg"
                   "geben-cfg"
-                  "php-cfg"
                   "cfw-cfg"
                   "color-theme-cfg"
                   "pomodoro-cfg"
