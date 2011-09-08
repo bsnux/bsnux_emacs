@@ -114,7 +114,7 @@
 (defun mygtd ()
    (interactive)
    (find-file "~/Dropbox/org/gtd.org")
- )
+)
 
 ; Open my events file
 (defun myevents ()
