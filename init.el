@@ -143,8 +143,8 @@
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 
-
-(global-hl-line-mode 1)
+;; Highlights current line
+;(global-hl-line-mode 1)
 
 (setq make-backup-files nil)
 
@@ -200,22 +200,4 @@
 ;; Custom faces
 (custom-set-faces
    '(linum ((t (:inherit shadow :background "gray95"))))
- ;; '(cfw:face-title ((t (:foreground "#f0dfaf" :weight bold :height 2.0 :inherit variable-pitch))))
- ;; '(cfw:face-header ((t (:foreground "#d0bf8f" :weight bold))))
-  '(cfw:face-sunday ((t :foreground "#cc9393" :background "grey10" :weight bold)))
-  '(cfw:face-saturday ((t :foreground "#8cd0d3" :background "grey10" :weight bold)))
- ;; '(cfw:face-holiday ((t :background "grey10" :foreground "#8c5353" :weight bold)))
- ;; '(cfw:face-grid ((t :foreground "DarkGrey")))
- ;; '(cfw:face-default-content ((t :foreground "#bfebbf")))
- ;; '(cfw:face-periods ((t :foreground "cyan")))
- ;; '(cfw:face-day-title ((t :background "grey10")))
- ;; '(cfw:face-default-day ((t :weight bold :inherit cfw:face-day-title)))
- ;; '(cfw:face-annotation ((t :foreground "RosyBrown" :inherit cfw:face-day-title)))
- ;; '(cfw:face-disable ((t :foreground "DarkGray" :inherit cfw:face-day-title)))
- ;; '(cfw:face-today-title ((t :background "#7f9f7f" :weight bold)))
- ;; '(cfw:face-today ((t :background: "grey10" :weight bold)))
- '(cfw:face-select ((t :background "#EDEBC7")))
- ;; '(cfw:face-toolbar ((t :foreground "Steelblue4" :background "Steelblue4")))
- ;; '(cfw:face-toolbar-button-off ((t :foreground "Gray10" :weight bold)))
- ;; '(cfw:face-toolbar-button-on ((t :foreground "Gray50" :weight bold)))
 )
