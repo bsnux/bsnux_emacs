@@ -167,6 +167,8 @@ Org-mode
   * **C-c C-d**                 : Insert a deadline
   * **C-.** (one for each date) : Selecting interval dates
 
+* Creating a header for a table: `|Field A|Field B|Field C RET |- TAB`
+
 Input methods
 -------------
 
@@ -184,6 +186,13 @@ Chinese
   * **chinese-sisheng**: It doesn't generate Hanzi
 
     * Example: *ni3* generates *nǐ*
+
+Tramp
+-----
+
+**/sudo:**: Open a file as *root*
+
+**/user@server:**: Open a remote shell for editing files
 
 Misc
 ----
