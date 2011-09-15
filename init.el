@@ -157,10 +157,8 @@
 (global-whitespace-mode t)
 
 ;; Fonts
-(if (system-is-linux)
-  (set-face-attribute 'default nil :font "Consolas-10.5")
-  (ding)
-  (set-face-attribute 'default nil :font "Monaco 10")
+(if (system-is-luke)
+  (set-face-attribute 'default nil :font "Inconsolata-11")
 )
 
 ;; A concise solution is to alter the interactive form of kill-ring-save and kill-region
