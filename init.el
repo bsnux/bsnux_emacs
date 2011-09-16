@@ -34,6 +34,11 @@
   "Return true if the machine is Luke (home laptop)"
   (string-equal system-name "luke")
 )
+(defun system-is-jedi ()
+  (interactive)
+  "Return true if the machine is jedi (office laptop)"
+  (string-equal system-name "jedi")
+)
 
 ;;; This was installed by package-install.el.
 ;;; This provides support for the package system and
@@ -159,6 +164,9 @@
 ;; Fonts
 (if (system-is-luke)
   (set-face-attribute 'default nil :font "Inconsolata-11")
+)
+(if (system-is-jedi)
+  (set-face-attribute 'default nil :font "Consolas-10.5")
 )
 
 ;; A concise solution is to alter the interactive form of kill-ring-save and kill-region
