@@ -107,6 +107,7 @@
                   "hs-cfg"
                   "maps-cfg"
                   "arduino-cfg"
+                  "erlang-cfg"
                   ))
 
 ; Custom variables
