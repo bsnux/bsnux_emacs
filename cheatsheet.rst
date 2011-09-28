@@ -156,6 +156,8 @@ Org-mode
 
    #+PRIORITIES: A B C
 
+* `Kanban <http://www.agilesoc.com/2011/08/08/emacs-org-mode-kanban-pomodoro-oh-my/>`_
+
 * Shortcuts:
 
   * **Shif-left/right**           : cycle workflow
