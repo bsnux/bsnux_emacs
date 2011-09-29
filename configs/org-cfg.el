@@ -85,8 +85,8 @@
 (add-hook 'remember-mode-hook 'org-remember-apply-template)
 (setq org-remember-templates
       '(
-        ("Journal" ?j "* %U %?\n\n  %i\n  %a" "~/Dropbox/MobileOrg/journal.org")
-        ("Notes" ?n "* %^{Title}\n  %i\n  %a" "~/Dropbox/MobileOrg/notes.org" "Notes")
+        ("Journal" ?j "* %U %?\n\n  %i\n  %a" "~/Dropbox/org/journal.org")
+        ("Notes" ?n "* %^{Title}\n  %i\n  %a" "~/Dropbox/org/notes.org" "Notes")
         )
       )
 

@@ -230,3 +230,5 @@ Misc
 **M-x ielm** : Launch an interactive elisp command line interface
 
 **C-x 4 a** : Adding a new entry for *ChangeLog* file
+
+**C-u C-c RET**: Retweet for thw tweet pointed by the cursor
