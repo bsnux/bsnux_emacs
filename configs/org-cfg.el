@@ -133,3 +133,9 @@
     (cfw:open-org-calendar)
    )
 )
+
+; Archive all DONE tasks
+(defun my-archive-tasks ()
+  (interactive)
+  (org-map-entries 'org-archive-subtree "/DONE" 'file)
+)

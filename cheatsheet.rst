@@ -170,6 +170,7 @@ Org-mode
   * **C-c .**                     : Prompt for date
   * **C-c C-s**                   : Insert SCHEDULED timestamp
   * **C-c .** (one for each date) : Selecting interval dates
+  * **C-c C-x a**                 : Archive a *DONE* task
 
 * Creating a header for a table: `|Field A|Field B|Field C RET |- TAB`
 
