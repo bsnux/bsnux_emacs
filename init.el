@@ -108,6 +108,7 @@
                   "maps-cfg"
                   "arduino-cfg"
                   "erlang-cfg"
+                  "php-cfg"
                   ))
 
 ; Custom variables
