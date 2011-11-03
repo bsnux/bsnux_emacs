@@ -40,6 +40,12 @@
   (string-equal system-name "jedi")
 )
 
+;; Insert current date
+(defun my-insert-date ()
+  "Insert the current date"
+  (interactive "*") (insert (format-time-string "%Y/%m/%d"))
+)
+
 ;;; This was installed by package-install.el.
 ;;; This provides support for the package system and
 ;;; interfacing with ELPA, the package archive.
