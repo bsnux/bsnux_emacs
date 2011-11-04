@@ -35,6 +35,7 @@
 ;;    M-enter                 : new item at current level
 ;;    Insert a deadline       : C-c C-d
 ;;    Selecting interval dates: C-c . (one for each date)
+;;    Insertr a link          : C-C C-l
 ;;-------------------------------------------------------
 
 ;; Keeping track of when a certain TODO item was finished
