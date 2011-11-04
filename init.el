@@ -46,6 +46,15 @@
   (interactive "*") (insert (format-time-string "%Y/%m/%d"))
 )
 
+;; Update timestamp automatically when file is saved
+;; file must contain this line: Time-stamp: <>
+(setq
+  time-stamp-active t
+  time-stamp-line-limit 10
+  time-stamp-format "%04y/%02m/%02d %02H:%02M"
+)
+(add-hook 'write-file-hooks 'time-stamp)
+
 ;;; This was installed by package-install.el.
 ;;; This provides support for the package system and
 ;;; interfacing with ELPA, the package archive.
