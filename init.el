@@ -124,6 +124,7 @@
                   "arduino-cfg"
                   "erlang-cfg"
                   "php-cfg"
+                  "haskell-cfg"
                   ))
 
 ; Custom variables
