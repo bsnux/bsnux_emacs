@@ -3,6 +3,7 @@
 (global-set-key [f2] 'save-buffer)
 (global-set-key [f3] 'shell)
 (global-set-key [f4] 'indent-region)
+(global-set-key [f9] 'join-line)
 ; lusty
 (global-set-key "\C-x\C-f" 'lusty-file-explorer)
 (global-set-key (kbd "C-x b") 'lusty-buffer-explorer)
@@ -19,4 +20,3 @@
 (global-set-key "\M-r" 'replace-string)
 ; PHP complete function
 (global-set-key "\M-1" 'php-complete-function)
-
