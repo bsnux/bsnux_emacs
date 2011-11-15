@@ -199,6 +199,11 @@ Tramp
 
 **/user@server:**: Open a remote shell for editing files
 
+Coding
+------
+
+**C-x RET f undecided-unix**: Change line terminator from Dos/Mac to UNIX
+
 Misc
 ----
 
