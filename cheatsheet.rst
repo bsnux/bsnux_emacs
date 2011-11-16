@@ -204,6 +204,13 @@ Coding
 
 **C-x RET f undecided-unix**: Change line terminator from Dos/Mac to UNIX
 
+Case conversion
+---------------
+
+**M-l**: Convert following word to lower case
+
+**M-u**: Convert following word to upper case
+
 Misc
 ----
 
