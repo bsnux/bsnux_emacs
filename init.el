@@ -221,6 +221,9 @@
 
 (setq initial-scratch-message ";; scratch buffer: Lisp evaluation & draft notes")
 
+;; Disabling VC for using magit
+(setq vc-handled-backends nil)
+
 ;; Custom faces
 (custom-set-faces
    '(linum ((t (:inherit shadow :background "gray95"))))
