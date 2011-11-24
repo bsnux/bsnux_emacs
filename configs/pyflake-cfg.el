@@ -6,7 +6,7 @@
 ;;     M-x python-check or
 ;;     C-c C-v or
 ;;     C-c C-w
-(setq python-check-command "flake8")
+(setq python-check-command "flake8 --ignore=E501,E202")
 
 (when (load "flymake" t)
   (defun flymake-pyflakes-init ()
@@ -15,6 +15,6 @@
        (local-file (file-relative-name
             temp-file
             (file-name-directory buffer-file-name))))
-      (list "flake8"  (list local-file))))
+      (list "~/bsnux_emacs/vendor/pychecker.sh"  (list local-file))))
    (add-to-list 'flymake-allowed-file-name-masks
              '("\\.py\\'" flymake-pyflakes-init)))
