@@ -42,7 +42,7 @@
 (setq org-log-done 'time)
 
 ;; Global shortcut to invoke org-agenda
-(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-ca" 'org-agenda-list)
 
 ;; Set to the location of your Org files on your local system
 (setq org-directory "~/org")
