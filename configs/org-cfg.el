@@ -49,6 +49,7 @@
 
 ;; Files for syncing
 (setq org-agenda-files (quote ( "~/Dropbox/org/gtd.org"
+                                "/tmp/test.org"
                                 "~/Dropbox/org/events.org")))
 
 ;; Set to the name of the file where new notes will be stored
@@ -68,16 +69,15 @@
           ((org-agenda-ndays 1)
            (org-agenda-overriding-header "Today")))))
 
-;; States for tasks
-(setq org-todo-keywords
-  '((sequence "TODO" "IN-PROGRESS" "DONE(!)" "CANCEL")))
-
-;; Different color for status
+;; ;; Different color for status
 (setq org-todo-keyword-faces
-           '(("TODO" . (:foreground "red" :weight bold :underline t))
-             ("DONE" . (:foreground "#7EBE48" :weight bold))
-             ("IN-PROGRESS" . (:foregorund "white" :weight bold :background "grey"))
-             ("CANCEL" . (:foreground "blue" :weight bold))))
+            '(("TODO" . (:foreground "red" :weight bold :underline t))
+              ("DONE" . (:foreground "#7EBE48" :weight bold)))
+)
+
+;; Don't display DONE items in agenda
+(setq org-agenda-skip-deadline-if-done t)
+(setq org-agenda-skip-scheduled-if-done t)
 
 ;; remember-mode with org-mode
 (org-remember-insinuate)
