@@ -49,7 +49,6 @@
 
 ;; Files for syncing
 (setq org-agenda-files (quote ( "~/Dropbox/org/gtd.org"
-                                "/tmp/test.org"
                                 "~/Dropbox/org/events.org")))
 
 ;; Set to the name of the file where new notes will be stored
