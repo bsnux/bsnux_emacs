@@ -180,12 +180,14 @@
 (global-whitespace-mode t)
 
 ;; Fonts
-(if (system-is-luke)
-  (set-face-attribute 'default nil :font "Inconsolata-11")
-)
-(if (system-is-jedi)
-  (set-face-attribute 'default nil :font "Consolas-10.5")
-)
+(when window-system
+  (if (system-is-luke)
+      (set-face-attribute 'default nil :font "Inconsolata-11")
+    )
+  (if (system-is-jedi)
+      (set-face-attribute 'default nil :font "Consolas-10.5")
+    )
+  )
 
 ;; A concise solution is to alter the interactive form of kill-ring-save and kill-region
 (put 'kill-ring-save 'interactive-form
