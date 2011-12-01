@@ -8,6 +8,8 @@
 ;;     C-c C-w
 (setq python-check-command "flake8 --ignore=E501,E202")
 
+(require 'flymake-cursor)
+
 (when (load "flymake" t)
   (defun flymake-pyflakes-init ()
     (let* ((temp-file (flymake-init-create-temp-buffer-copy
