@@ -125,6 +125,7 @@
                   "erlang-cfg"
                   "php-cfg"
                   "haskell-cfg"
+                  "po-cfg"
                   ))
 
 ; Custom variables
