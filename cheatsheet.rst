@@ -245,3 +245,7 @@ Misc
 **C-x 4 a** : Adding a new entry for *ChangeLog* file
 
 **C-u C-c RET**: Retweet for thw tweet pointed by the cursor
+
+**M-x align-regexp**: Align code based on regexp. 1) Mark region. 2) Execute it
+
+**M-x occur**: Display a new buffer with founded occurences in file
