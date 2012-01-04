@@ -227,6 +227,9 @@
 ;; Disabling VC for using magit
 (setq vc-handled-backends nil)
 
+;; Enabling dead-keys. It works with layouts such as: setxkbmap -layout us -variant intl
+(require 'iso-transl)
+
 ;; Custom faces
 (custom-set-faces
    '(linum ((t (:inherit shadow :background "gray95"))))
