@@ -126,6 +126,7 @@
                   "php-cfg"
                   "haskell-cfg"
                   "po-cfg"
+                  "mustache-cfg"
                   ))
 
 ; Custom variables
