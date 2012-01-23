@@ -16,7 +16,7 @@
   (interactive)
   (color-theme-install
    '(color-theme-wombat
-     ((background-color . "#111111")
+     ((background-color . "#363636")
       (background-mode . dark)
       (border-color . "black")
       (cursor-color . "SteelBlue")
