@@ -127,7 +127,6 @@
                   "haskell-cfg"
                   "po-cfg"
                   "mustache-cfg"
-                  "flymakecursor-cfg"
                   ))
 
 ; Custom variables
