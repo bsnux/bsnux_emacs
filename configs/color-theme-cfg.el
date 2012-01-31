@@ -9,6 +9,7 @@
 (load-file "~/.emacs.d/vendor/color-theme/themes/color-theme-leuven.el")
 (load-file "~/.emacs.d/vendor/color-theme/themes/sweyla516816.el")
 (load-file "~/.emacs.d/vendor/color-theme/themes/sweyla834976.el")
+(load-file "~/.emacs.d/vendor/color-theme/themes/color-theme-railscasts.el")
 
 (require 'color-theme-solarized)
 (require 'sweyla516816)
