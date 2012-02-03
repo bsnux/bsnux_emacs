@@ -127,6 +127,7 @@
                   "haskell-cfg"
                   "po-cfg"
                   "mustache-cfg"
+                  "ruby-cfg"
                   ))
 
 ; Custom variables
