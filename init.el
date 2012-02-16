@@ -29,6 +29,13 @@
   "Return true if the machine is running Linux"
   (string-equal system-type "gnu/linux")
 )
+
+(defun system-is-mac()
+   (interactive)
+   "Return true if os is Mac OS X"
+   (string-equal system-type "darwin")
+)
+
 (defun system-is-luke ()
   (interactive)
   "Return true if the machine is Luke (home laptop)"
@@ -38,6 +45,12 @@
   (interactive)
   "Return true if the machine is jedi (office laptop)"
   (string-equal system-name "jedi")
+)
+
+(defun system-is-yoda ()
+  (interactive)
+  "Return true if the machine is yoda (Macbook)"
+  (string-equal system-name "yoda.local")
 )
 
 ;; Insert current date
@@ -189,6 +202,13 @@
     )
   (if (system-is-jedi)
       (set-face-attribute 'default nil :font "Consolas-10.5")
+    )
+  (if (system-is-yoda)
+      (set-face-attribute 'default nil :font "Monaco-13")
+      (setq mac-option-key-is-meta nil)
+      (setq mac-command-key-is-meta t)
+      (setq mac-command-modifier 'meta)
+      (setq mac-option-modifier nil)
     )
   )
 

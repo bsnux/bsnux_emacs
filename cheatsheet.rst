@@ -141,6 +141,11 @@ used by *Emacs*
 
 **M-,** : Go to next match
 
+Lisp programming
+----------------
+
+**C-x C-e**: Evaluate current buffer
+
 Org-mode
 --------
 
