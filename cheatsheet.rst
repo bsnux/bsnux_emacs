@@ -254,3 +254,5 @@ Misc
 **M-x align-regexp**: Align code based on regexp. 1) Mark region. 2) Execute it
 
 **M-x occur**: Display a new buffer with founded occurences in file
+
+**M-x sort-lines**: Sorting all lines in a file
