@@ -197,6 +197,13 @@ Chinese
 
     * Example: *ni3* generates *nǐ*
 
+Japanese
+--------
+
+*C-\*: Input method => japanese
+
+*M-x japanese-katakana-region*: Coverting Hiragana to Katakana
+
 Tramp
 -----
 
