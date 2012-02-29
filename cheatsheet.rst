@@ -223,6 +223,13 @@ Case conversion
 
 **M-u**: Convert following word to upper case
 
+Documentation
+-------------
+
+**M-x man**: Read man page
+
+**C-h i**: Info. pages for Emacs and GNU
+
 Misc
 ----
 
