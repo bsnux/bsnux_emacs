@@ -200,16 +200,16 @@ Chinese
 Japanese
 --------
 
-*C-\*: Input method => japanese
+**C-\**: Input method => japanese
 
-*M-x japanese-katakana-region*: Coverting Hiragana to Katakana
+**M-x japanese-katakana-region**: Coverting Hiragana to Katakana
 
 Tramp
 -----
 
-**/sudo:**: Open a file as *root*
+**/sudo::** => Open a file as *root*
 
-**/user@server:**: Open a remote shell for editing files
+**/user@server:** => Open a remote shell for editing files
 
 Coding
 ------
