@@ -200,7 +200,7 @@ Chinese
 Japanese
 --------
 
-**C-\**: Input method => japanese
+**C-\\**: Input method => japanese
 
 **M-x japanese-katakana-region**: Coverting Hiragana to Katakana
 
