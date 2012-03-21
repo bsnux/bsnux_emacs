@@ -251,6 +251,16 @@
 ;; Enabling dead-keys. It works with layouts such as: setxkbmap -layout us -variant intl
 (require 'iso-transl)
 
+;; Asking if you want close emacs
+(defun ask-before-closing ()
+  (interactive)
+  (if (y-or-n-p (format "Are you sure you want to quit Emacs? "))
+    (message "Canceled exit")))
+
+;; Asking before quit (only for x-window)
+(when (eq window-system 'x)
+    (global-set-key (kbd "C-z") 'ask-before-closing))
+
 ;; Custom faces
 (custom-set-faces
    '(linum ((t (:inherit shadow :background "gray95"))))
