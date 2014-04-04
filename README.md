@@ -1,4 +1,4 @@
-EMACS configuration --  Arturo Fernandez <arturo@bsnux.com>
+EMACS configuration --  Arturo Fernandez
 ===========================================================
 
 Description
