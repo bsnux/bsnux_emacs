@@ -17,6 +17,10 @@ Fresh installation
     * $ git submodule init
     * $ git submodule update
 
+3. Create a *symlink* to your *HOME* directory:
+
+    * $ ln -s ~/bsnux_emacs ~/.emacs.d
+
 Usage
 -----
 
