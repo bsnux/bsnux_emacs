@@ -122,18 +122,18 @@
                   "keybinding-cfg"
                   "lusty-explorer-cfg"
                   "uniquify-cfg"
-                  "twittering-cfg"
+                  ;;"twittering-cfg"
                   "rinari-cfg"
                   "markdown-cfg"
                   "magit-cfg"
                   "yaml-cfg"
                   "dired-cfg"
                   "geben-cfg"
-                  "cfw-cfg"
+                  ;;"cfw-cfg"
                   "color-theme-cfg"
                   "pomodoro-cfg"
                   "hs-cfg"
-                  "maps-cfg"
+                  ;;"maps-cfg"
                   "arduino-cfg"
                   "erlang-cfg"
                   "php-cfg"
@@ -224,7 +224,7 @@
          (list (line-beginning-position) (line-beginning-position 2)))))
 
 ;; Set scroll-bar
-(set-scroll-bar-mode 'right)
+;;(set-scroll-bar-mode 'right)
 
 ;; Setting filename on the frame title
 (setq frame-title-format

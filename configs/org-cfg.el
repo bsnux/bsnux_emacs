@@ -79,17 +79,17 @@
 (setq org-agenda-skip-scheduled-if-done t)
 
 ;; remember-mode with org-mode
-(org-remember-insinuate)
-(setq remember-annotation-functions '(org-remember-annotation))
-(setq remember-handler-functions '(org-remember-handler))
-(add-hook 'remember-mode-hook 'org-remember-apply-template)
-(setq org-remember-templates
-      '(
-        ("Journal" ?j "* %U %?\n\n  %i\n  %a" "~/Dropbox/org/journal.org")
-        ("Notes" ?n "* %^{Title}\n  %i\n  %a" "~/Dropbox/org/notes.org" "Notes")
-        )
-      )
-
+;;(org-remember-insinuate)
+;;(setq remember-annotation-functions '(org-remember-annotation))
+;;(setq remember-handler-functions '(org-remember-handler))
+;;(add-hook 'remember-mode-hook 'org-remember-apply-template)
+;;(setq org-remember-templates
+;;      '(
+;;        ("Journal" ?j "* %U %?\n\n  %i\n  %a" "~/Dropbox/org/journal.org")
+;;        ("Notes" ?n "* %^{Title}\n  %i\n  %a" "~/Dropbox/org/notes.org" "Notes")
+;;        )
+;;      )
+;;
 ;; creating a pop-up for remember-mode
 (defadvice remember-other-frame (around remember-frame-parameters activate)
   "Set some frame parameters for the remember frame."
